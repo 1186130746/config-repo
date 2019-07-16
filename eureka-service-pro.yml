@@ -9,3 +9,16 @@ eureka:
    #   defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
 
+
+spring:
+  boot:
+    admin:
+      client:
+        url: http://springboot-admin:8099
+  application:
+    name: eureka-server
+management:
+  endpoints:
+    web:
+      exposure:
+        include: /*
